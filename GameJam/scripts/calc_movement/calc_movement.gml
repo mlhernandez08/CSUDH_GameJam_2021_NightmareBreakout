@@ -3,6 +3,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function calc_movement(){
 hsp += (right - left) * walk_spd;
+vsp += global.grav;
 
 //drag
 hsp = lerp(hsp, 0, drag);
