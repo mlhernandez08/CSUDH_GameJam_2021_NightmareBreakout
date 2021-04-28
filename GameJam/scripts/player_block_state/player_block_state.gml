@@ -30,8 +30,7 @@ if block {
 
 
 if jump {
-	state = states.JUMP;	
-	vsp = jump_spd;
+	jumped();
 }
 
 //apply movement
