@@ -35,6 +35,7 @@
     {"id":{"name":"player_attack_state","path":"scripts/player_attack_state/player_attack_state.yy",},"order":3,},
     {"id":{"name":"calc_movement","path":"scripts/calc_movement/calc_movement.yy",},"order":1,},
     {"id":{"name":"s_player_dust_jump","path":"sprites/s_player_dust_jump/s_player_dust_jump.yy",},"order":9,},
+    {"id":{"name":"s_bkgd_moon","path":"sprites/s_bkgd_moon/s_bkgd_moon.yy",},"order":0,},
     {"id":{"name":"player_jump_state","path":"scripts/player_jump_state/player_jump_state.yy",},"order":2,},
     {"id":{"name":"player_crouch_state","path":"scripts/player_crouch_state/player_crouch_state.yy",},"order":5,},
     {"id":{"name":"rm_00","path":"rooms/rm_00/rm_00.yy",},"order":0,},
@@ -73,6 +74,7 @@
     {"folderPath":"folders/Objects/Player.yy","order":1,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Player.yy","order":4,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Tiles.yy","order":2,"resourceVersion":"1.0","name":"Tiles","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Backgrounds.yy","order":3,"resourceVersion":"1.0","name":"Backgrounds","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
