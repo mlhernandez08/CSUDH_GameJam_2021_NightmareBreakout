@@ -36,7 +36,10 @@ if block {
 	hsp = 0;
 }
 
-
+if down {
+	state = states.CROUCH;
+	hsp = 0;
+}
 //apply movement
 collision();
 
