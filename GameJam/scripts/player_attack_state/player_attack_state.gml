@@ -1,6 +1,4 @@
 /// player_attack_state();
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function player_attack_state(){
 //get input
 get_input();
@@ -22,6 +20,12 @@ if image_index >= image_number - sprite_get_speed(sprite_index)/room_speed {
 if jump {
 	jumped();
 	state = states.ATTACK;
+}
+
+// create hitbox
+if image_index >= 1 and image_index <= 3 {
+	var inst = instance_create_layer(x, y, "Player", o_player_attack_hitbox);
+	inst.image_xscale = facing;
 }
 
 // enable smaller jumps

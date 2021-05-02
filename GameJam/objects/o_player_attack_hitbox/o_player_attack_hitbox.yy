@@ -1,19 +1,13 @@
 {
   "spriteId": {
-    "name": "s_frog_idle",
-    "path": "sprites/s_frog_idle/s_frog_idle.yy",
+    "name": "s_player_attack_hitbox",
+    "path": "sprites/s_player_attack_hitbox/s_player_attack_hitbox.yy",
   },
   "solid": false,
-  "visible": true,
-  "spriteMaskId": {
-    "name": "s_frog_idle",
-    "path": "sprites/s_frog_idle/s_frog_idle.yy",
-  },
+  "visible": false,
+  "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "o_enemy_parent",
-    "path": "objects/o_enemy_parent/o_enemy_parent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -28,18 +22,17 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Objects/Enemy.yy",
+    "name": "Player",
+    "path": "folders/Objects/Player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_frog",
+  "name": "o_player_attack_hitbox",
   "tags": [],
   "resourceType": "GMObject",
 }
