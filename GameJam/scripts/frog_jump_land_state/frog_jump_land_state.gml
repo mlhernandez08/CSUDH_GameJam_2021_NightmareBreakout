@@ -3,6 +3,7 @@ function frog_jump_land_state(){
 	// get inputs
 	
 	// calculate movement
+	calc_entity_movement()
 	
 	// modify state
 		if image_index >= image_number - sprite_get_speed(sprite_index)/room_speed {

@@ -4,6 +4,7 @@ function frog_idle_state(){
 	breathing();
 	
 	// calculate movement
+	calc_entity_movement()
 	
 	// modify state
 	// attack

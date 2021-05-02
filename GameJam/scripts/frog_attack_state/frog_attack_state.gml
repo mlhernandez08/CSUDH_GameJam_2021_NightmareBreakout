@@ -3,6 +3,7 @@ function frog_attack_state(){
 	// get inputs
 	
 	// calculate movement
+	calc_entity_movement()
 	
 	// modify state
 	// attack warning
