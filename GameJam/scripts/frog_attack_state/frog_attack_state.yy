@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Enemy/Frog.yy",
   },
   "resourceVersion": "1.0",
-  "name": "frog_land_state",
+  "name": "frog_attack_state",
   "tags": [],
   "resourceType": "GMScript",
 }

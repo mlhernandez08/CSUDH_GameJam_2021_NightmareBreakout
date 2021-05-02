@@ -18,7 +18,10 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":72.0,"y":223.0,"resourceVersion":"1.0","name":"inst_7441B047","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"o_frog","path":"objects/o_frog/o_frog.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":296.0,"y":223.0,"resourceVersion":"1.0","name":"inst_538B6FB7","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_frog","path":"objects/o_frog/o_frog.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":336.0,"y":127.0,"resourceVersion":"1.0","name":"inst_538B6FB7","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_frog","path":"objects/o_frog/o_frog.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":275.0,"y":223.0,"resourceVersion":"1.0","name":"inst_60F01C0","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_frog","path":"objects/o_frog/o_frog.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":786.0,"y":223.0,"resourceVersion":"1.0","name":"inst_2CD6C42F","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_frog","path":"objects/o_frog/o_frog.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":865.0,"y":159.0,"resourceVersion":"1.0","name":"inst_65D3DC6F","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemy","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Dust","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"t_collisions","path":"tilesets/t_collisions/t_collisions.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":45,"SerialiseHeight":13,"TileSerialiseData":[
@@ -136,6 +139,9 @@
   "instanceCreationOrder": [
     {"name":"inst_7441B047","path":"rooms/rm_00/rm_00.yy",},
     {"name":"inst_538B6FB7","path":"rooms/rm_00/rm_00.yy",},
+    {"name":"inst_60F01C0","path":"rooms/rm_00/rm_00.yy",},
+    {"name":"inst_2CD6C42F","path":"rooms/rm_00/rm_00.yy",},
+    {"name":"inst_65D3DC6F","path":"rooms/rm_00/rm_00.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
