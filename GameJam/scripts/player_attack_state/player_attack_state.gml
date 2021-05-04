@@ -35,6 +35,9 @@ if vsp < 0 and !jump_held
 //apply movement
 collision();
 
+//check players hp
+check_player_hp();
+
 //apply animations
 anim();
 }

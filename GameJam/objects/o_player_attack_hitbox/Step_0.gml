@@ -26,6 +26,9 @@ with(o_enemy_parent) {
 				// set hurt timer
 				alarm[HURT] = hurt_time;
 				
+				//screen_shake
+				scr_screen_shake(.1, 1.5);
+				
 				/* use if only want one hit effect to occur with multiple enemy hits
 				var _create = true;
 				if instance_exists(o_sword_hit) {

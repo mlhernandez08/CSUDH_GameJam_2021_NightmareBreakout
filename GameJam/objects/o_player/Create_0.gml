@@ -13,9 +13,31 @@ jumps = jumps_initial;
 
 //friction
 drag = .12;
+//stretching
+scale_x = 1;
+scale_y = 1;
+scale_min = 0.75;
+scale_max = 1.25;
+scale_decay = 0.2;
 
+// gems
+gems = 0;
+
+// set rm_00 start postion
+room_start_pos_x = 72;
+room_start_pos_y = 223;
+room_start_facing = 1;
+x = room_start_pos_x;
+y = room_start_pos_y;
 //facing direction
-facing = 1;
+facing = room_start_facing;
+
+// hurt
+flash_counter = 0;
+hurt = false;
+hurt_time = room_speed;
+hp = 5;
+max_hp = hp;
 
 //movement
 left = 0;
@@ -38,7 +60,10 @@ enum states {
 	ATTACK,
 	BLOCK,
 	CROUCH,
-	CROUCH_BLOCK
+	CROUCH_BLOCK,
+	HURTING,
+	KNOCKBACK, 
+	DIE
 	
 }
 
@@ -52,6 +77,9 @@ states_array[states.ATTACK]			= player_attack_state;
 states_array[states.BLOCK]			= player_block_state;
 states_array[states.CROUCH]			= player_crouch_state;
 states_array[states.CROUCH_BLOCK]	= player_crouch_block_state;
+states_array[states.HURTING]		= player_hurting_state;
+states_array[states.KNOCKBACK]		= player_knockback_state;
+states_array[states.DIE]			= player_die_state;
 
 //create sprites array
 sprites_array[states.IDLE]			= s_player_idle;
@@ -61,6 +89,9 @@ sprites_array[states.ATTACK]		= s_player_attack;
 sprites_array[states.BLOCK]			= s_player_block;
 sprites_array[states.CROUCH]		= s_player_crouch;
 sprites_array[states.CROUCH_BLOCK]	= s_player_crouch_block;
+sprites_array[states.HURTING]		= s_player_hurting;
+sprites_array[states.KNOCKBACK]		= s_player_knockback;
+sprites_array[states.DIE]			= s_player_die;
 
 //create mask array
 mask_array[states.IDLE]			= s_player_idle;
@@ -70,3 +101,6 @@ mask_array[states.ATTACK]		= s_player_idle;
 mask_array[states.BLOCK]		= s_player_idle;
 mask_array[states.CROUCH]		= s_player_crouch;
 mask_array[states.CROUCH_BLOCK]	= s_player_crouch;
+mask_array[states.HURTING]		= s_player_idle;
+mask_array[states.KNOCKBACK]	= s_player_idle;
+mask_array[states.DIE]			= s_player_die;

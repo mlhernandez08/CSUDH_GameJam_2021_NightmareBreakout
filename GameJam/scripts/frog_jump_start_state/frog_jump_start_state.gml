@@ -1,5 +1,8 @@
 /// frog_jump_start_state
 function frog_jump_start_state(){
+	//check health
+	check_enemy_hp();
+	
 	// get inputs
 	
 	// calculate movement

@@ -1,5 +1,8 @@
 /// frog_attack_state
 function frog_attack_state(){
+	//check health
+	check_enemy_hp();
+	
 	// get inputs
 	
 	// calculate movement
@@ -14,6 +17,12 @@ function frog_attack_state(){
 	}
 	
 	if attack {
+		if image_index >= 5 and image_index <= 6{
+			// create hitbox
+			var inst = instance_create_layer(x, y, "Enemy", o_frog_attack_hitbox);
+			// ensure hitbox faces the correct direction
+			inst.image_xscale = facing;
+		}
 		// set attack depth
 		depth = layer_get_depth(layer_get_id("Player")) - 1;
 		if image_index >= image_number - sprite_get_speed(sprite_index)/room_speed {

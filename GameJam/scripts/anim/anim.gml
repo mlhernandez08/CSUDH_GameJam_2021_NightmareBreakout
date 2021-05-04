@@ -22,6 +22,15 @@ switch(state) {
 			else
 				sprite_index = s_player_attack;
 	break;
+	case states.HURTING:
+		if !on_ground() {
+			sprite_index = s_player_jump;
+			if vsp < 0 
+				image_index = 0;
+			else
+				image_index = 1;
+		}
+	break;
 }
 
 }

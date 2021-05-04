@@ -8,6 +8,7 @@ function macros(){
 
 //camera 
 #macro CAMERA_RESET 0 
+#macro SCREEN_SHAKE_TIME 1
 
 // attack
 #macro CAN_ATTACK 0
@@ -15,4 +16,7 @@ function macros(){
 //frog
 #macro INHALE 1
 #macro HURT 2
+
+//chest
+#macro OPEN 0
 }

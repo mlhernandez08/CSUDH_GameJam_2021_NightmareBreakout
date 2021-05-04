@@ -3,14 +3,15 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function get_input(){
 //keyboard input
-left = keyboard_check(vk_left);
-right = keyboard_check(vk_right);
-up = keyboard_check(vk_up);
-down = keyboard_check(vk_down);
+left = keyboard_check(vk_left)		or keyboard_check(ord("A"));
+right = keyboard_check(vk_right)	or keyboard_check(ord("D"));;
+up = keyboard_check(vk_up)			or keyboard_check(ord("W"));;
+down = keyboard_check(vk_down)		or keyboard_check(ord("S"));;
 attack = keyboard_check_pressed(vk_shift);
 jump = keyboard_check_pressed(vk_space);
 jump_held = keyboard_check(vk_space);
 block = keyboard_check(ord("Z"));
+action = keyboard_check(ord("X"));
 
 //controller input
 var _dev = 0;
@@ -24,6 +25,7 @@ if gamepad_is_connected(_dev) {
 	jump		= gamepad_button_check_pressed(_dev, gp_face1) or jump;
 	jump_held	= gamepad_button_check(_dev, gp_face1) or jump_held;
 	block		= gamepad_button_check(_dev, gp_shoulderr) or block;
+	action		= gamepad_button_check(_dev, gp_face3) or action;
 }
 
 }

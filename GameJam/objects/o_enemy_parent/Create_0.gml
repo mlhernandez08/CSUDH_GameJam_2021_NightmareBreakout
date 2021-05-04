@@ -5,3 +5,6 @@ flash_counter = 0;
 
 //slowdown
 drag = 0.12;
+
+//how many gems to drop on death
+death_gem_value = 3;

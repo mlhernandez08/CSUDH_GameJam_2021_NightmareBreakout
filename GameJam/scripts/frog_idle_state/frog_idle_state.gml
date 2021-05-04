@@ -1,5 +1,8 @@
 /// frog_idle_state
 function frog_idle_state(){
+	//check health
+	check_enemy_hp();
+	
 	// get inputs
 	breathing();
 	
@@ -12,14 +15,16 @@ function frog_idle_state(){
 	var player_alert = false; // detect if player is within range and in front but cannot attack
 	// player is within range and we are facing the player and can attack
 	if (distance_to_object(o_player) < detect_player_dis) and sign(o_player.x - x) = facing {
-		if can_attack {
-			// attack
-			can_attack = false;
-			state = frog_states.ATTACK;
-			image_index = 0;
-			image_speed = 1;
+		if o_player.hp > 0 {
+			if can_attack {
+				// attack
+				can_attack = false;
+				state = frog_states.ATTACK;
+				image_index = 0;
+				image_speed = 1;
+			}
+			player_alert = true;
 		}
-		player_alert = true;
 	}
 	
 	if (jump_timer < 0) and !player_alert {

@@ -10,6 +10,9 @@ calc_movement();
 
 //check state
 if on_ground() {
+	// apply stretch
+	scale_x = scale_max;
+	scale_y = scale_min;
 	if hsp != 0
 		state = states.WALK;
 	else
@@ -36,6 +39,9 @@ if vsp < 0 and !jump_held
 
 //apply movement
 collision();
+
+//check players hp
+check_player_hp();
 
 //apply animations
 anim();
