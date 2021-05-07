@@ -63,6 +63,11 @@ if	(t1 != VOID and (((vsp > 0 or t1 != PLATFORM)) and t3 != PLATFORM) or (t1 == 
 	else
 		y = y - (y mod global.tile_size) - (side - y);
 	vsp = 0;
+	
+	// death tile check
+	if t1 == DEATH or t2 == DEATH or y > room_height {
+		hp = 0;	
+	}
 }
 y += vsp;
 

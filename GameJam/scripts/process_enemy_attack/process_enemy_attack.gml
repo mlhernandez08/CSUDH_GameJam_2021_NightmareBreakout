@@ -54,6 +54,17 @@ function process_enemy_attack(){
 					
 					//screen_shake
 					scr_screen_shake(.125, -1);
+					
+					// enemy gets knocked back too 
+					with(other) {
+						if object_index = o_bug {
+							// zero decimal to get exact movement
+							hsp_decimal = 0;
+							// knock the enemy away from player
+							hsp = sign(x - o_player.x) * other.knockback_dis;
+							alarm[KNOCKEDBACK] = other.knockback_time;
+						}
+					}
 				}
 			}
 		}

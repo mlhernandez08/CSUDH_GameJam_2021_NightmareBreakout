@@ -42,8 +42,8 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_5AEA8ADE","path":"rooms/rm_init/rm_init.yy",},
     {"name":"inst_EC2D7EA","path":"rooms/rm_init/rm_init.yy",},
+    {"name":"inst_5AEA8ADE","path":"rooms/rm_init/rm_init.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

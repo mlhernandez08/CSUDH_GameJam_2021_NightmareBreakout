@@ -22,6 +22,7 @@ scale_decay = 0.2;
 
 // gems
 gems = 0;
+gems_value = 50;
 
 // set rm_00 start postion
 room_start_pos_x = 72;
@@ -38,6 +39,14 @@ hurt = false;
 hurt_time = room_speed;
 hp = 5;
 max_hp = hp;
+// how long enemies get knocked back for when hit
+knockback_time = room_speed / 2;
+knockback_dis = 1.5;
+
+// lives
+lives_initial = 3;
+lives = lives_initial;
+lives_value = 1000;
 
 //movement
 left = 0;

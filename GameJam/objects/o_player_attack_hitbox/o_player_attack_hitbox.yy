@@ -4,7 +4,7 @@
     "path": "sprites/s_player_attack_hitbox/s_player_attack_hitbox.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

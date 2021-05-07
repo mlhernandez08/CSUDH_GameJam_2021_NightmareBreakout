@@ -6,6 +6,7 @@ function check_player_hp(){
 		image_speed = 1;
 		scale_x = 1;
 		scale_y = 1;
+		lives --;
 	}
 
 }

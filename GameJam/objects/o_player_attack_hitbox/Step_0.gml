@@ -47,5 +47,11 @@ with(o_enemy_parent) {
 		}
 	}
 }
+
+// destroy arrows that are hit
+var inst = instance_place(x, y, o_arrow);
+if inst != noone
+	inst.die = true;	
+	
 // @description enable death at begin step
 die = true;

@@ -39,6 +39,13 @@ if col = c_black {
 				case 4: col = c_red;	break;
 			}
 		break;
+		case 5:
+			// hp
+			intensity = 0.3
+			radius = 18;
+			col = c_white;
+			flickering = false;
+		break;
 
 	}
 }

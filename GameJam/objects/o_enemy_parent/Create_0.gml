@@ -8,3 +8,6 @@ drag = 0.12;
 
 //how many gems to drop on death
 death_gem_value = 3;
+
+// hp drop chance
+hp_drop_chance = 0.3;
