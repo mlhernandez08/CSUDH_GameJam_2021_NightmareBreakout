@@ -72,7 +72,8 @@ enum states {
 	CROUCH_BLOCK,
 	HURTING,
 	KNOCKBACK, 
-	DIE
+	DIE,
+	GAME_END
 	
 }
 
@@ -89,6 +90,7 @@ states_array[states.CROUCH_BLOCK]	= player_crouch_block_state;
 states_array[states.HURTING]		= player_hurting_state;
 states_array[states.KNOCKBACK]		= player_knockback_state;
 states_array[states.DIE]			= player_die_state;
+states_array[states.GAME_END]		= player_game_end_state;
 
 //create sprites array
 sprites_array[states.IDLE]			= s_player_idle;
@@ -101,6 +103,7 @@ sprites_array[states.CROUCH_BLOCK]	= s_player_crouch_block;
 sprites_array[states.HURTING]		= s_player_hurting;
 sprites_array[states.KNOCKBACK]		= s_player_knockback;
 sprites_array[states.DIE]			= s_player_die;
+sprites_array[states.GAME_END]		= s_player_die;
 
 //create mask array
 mask_array[states.IDLE]			= s_player_idle;
@@ -113,3 +116,4 @@ mask_array[states.CROUCH_BLOCK]	= s_player_crouch;
 mask_array[states.HURTING]		= s_player_idle;
 mask_array[states.KNOCKBACK]	= s_player_idle;
 mask_array[states.DIE]			= s_player_die;
+mask_array[states.GAME_END]			= s_player_die;

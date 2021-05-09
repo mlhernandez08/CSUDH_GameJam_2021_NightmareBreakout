@@ -11,3 +11,8 @@ death_gem_value = 3;
 
 // hp drop chance
 hp_drop_chance = 0.3;
+
+// smoke on spawn
+if room == rm_02 {
+	alarm[SPAWN] = 1;
+}

@@ -18,3 +18,8 @@ if game_over_lose {
 		}
 	}
 }
+
+// reduce delay time at game over
+if game_over_won {
+	game_over_won_delay--;	
+}

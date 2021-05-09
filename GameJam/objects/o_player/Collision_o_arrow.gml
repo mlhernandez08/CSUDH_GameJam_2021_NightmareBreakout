@@ -11,6 +11,7 @@ if !other.die {
 			if down {
 				// blocking and crouching
 				other.die = true;
+				audio_play_sound(snd_block, 15, false);
 			} else {
 				take_damage = true;	
 			}
@@ -35,6 +36,8 @@ if !other.die {
 			
 			// screen shakke
 			scr_screen_shake(.125, -1);
+			
+			audio_play_sound(snd_player_hit, 20, false);
 		} else {
 			other.die = true;
 		}

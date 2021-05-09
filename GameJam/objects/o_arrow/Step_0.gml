@@ -29,6 +29,11 @@ if die {
 	if image_speed != 1 
 		image_index = 1;
 	image_speed = 1;	
+	// play arrow die sound if arrow on screen
+	if on_screen(40) {
+		if image_index == 1
+			audio_play_sound(snd_arrow_die, 20, false);	
+	}
 }
 
 // destroy if left room

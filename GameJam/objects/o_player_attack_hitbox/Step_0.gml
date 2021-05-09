@@ -26,8 +26,12 @@ with(o_enemy_parent) {
 				// set hurt timer
 				alarm[HURT] = hurt_time;
 				
-				//screen_shake
+				// screen_shake
 				scr_screen_shake(.1, 1.5);
+				
+				// sound
+				if !audio_is_playing(snd_sword_hit)
+					audio_play_sound(snd_sword_hit, 15, false);
 				
 				/* use if only want one hit effect to occur with multiple enemy hits
 				var _create = true;

@@ -22,6 +22,8 @@ function frog_attack_state(){
 			var inst = instance_create_layer(x, y, "Enemy", o_frog_attack_hitbox);
 			// ensure hitbox faces the correct direction
 			inst.image_xscale = facing;
+			if image_index == 5
+				audio_play_sound(snd_frog_attack, 15, false);
 		}
 		// set attack depth
 		depth = layer_get_depth(layer_get_id("Player")) - 1;

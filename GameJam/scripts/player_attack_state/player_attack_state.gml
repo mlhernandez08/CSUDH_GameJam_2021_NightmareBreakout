@@ -26,6 +26,8 @@ if jump {
 if image_index >= 1 and image_index <= 3 {
 	var inst = instance_create_layer(x, y, "Player", o_player_attack_hitbox);
 	inst.image_xscale = facing;
+	if image_index == 1
+		audio_play_sound(snd_sword_swing, 20, false);
 }
 
 // enable smaller jumps

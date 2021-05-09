@@ -3,6 +3,7 @@ if on_screen(global.tile_size) {
 	//object is within the screenn
 	if can_fire {
 		can_fire = false;
+		fire_delay = fire_delay_initial;
 		
 		// set spawn position from the center
 		var ypos = ((sprite_get_height(sprite_index) / 2) - 2) * spawn_pos;
@@ -18,11 +19,15 @@ if on_screen(global.tile_size) {
 		var inst = instance_create_layer(side, y + ypos, "Arrow_shoot", o_arrow_spark);
 		inst.image_xscale = facing;
 		
+		// sound 
+		audio_play_sound(snd_arrow_firing, 10, false);
+		
 	} else {
 		fire_delay--;
 		if fire_delay <= 0 {
 			can_fire = true;
-			fire_delay = fire_delay_initial;
 		}
 	}
+} else {
+	fire_delay--;	
 }

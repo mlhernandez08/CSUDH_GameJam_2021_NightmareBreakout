@@ -12,5 +12,6 @@ function jumped(){
 		vsp = jump_spd
 		jumps -= 1;
 		jump_dust();
+		audio_play_sound(snd_jump, 15, false);
 	}
 }

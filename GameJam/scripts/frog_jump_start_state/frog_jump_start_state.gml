@@ -12,6 +12,8 @@ function frog_jump_start_state(){
 	if image_index >= image_number - sprite_get_speed(sprite_index)/room_speed {
 		state = frog_states.JUMP;
 		vsp = jump_spd;
+		if on_screen(40) 
+			audio_play_sound(snd_frog_jump, 5, false);
 		
 	}
 	

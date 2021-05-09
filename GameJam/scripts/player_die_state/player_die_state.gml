@@ -20,6 +20,8 @@ if (image_index >= image_number - 1) {
 		if lives <= 0 {
 			o_game.game_over_lose = true;
 		} else {
+			//restart msg
+			show_msg("Press Jump to Restart", 1);
 			get_input();
 			if jump or attack {
 				fade_to_room(room, room_start_pos_x, room_start_pos_y, room_start_facing, c_black);

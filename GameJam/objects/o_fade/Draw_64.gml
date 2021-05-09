@@ -33,10 +33,12 @@ if fade_to_color {
 				image_speed = 1;
 				hp = max_hp;
 			}
-			
-			//change state and update animation
-			state = states.IDLE;
-			anim();
+			// check for game end state
+			if state != states.GAME_END {
+				//change state and update animation
+				state = states.IDLE;
+				anim();
+			}
 		}
 		// pan camera quickly
 		o_camera.camera_pan_speed = 1;

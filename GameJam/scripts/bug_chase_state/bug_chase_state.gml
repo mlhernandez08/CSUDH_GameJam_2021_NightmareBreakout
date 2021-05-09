@@ -39,6 +39,10 @@ function bug_chase_state(){
 	// facing direction
 	if sign(xx) != 0
 		facing = sign(xx);
+		
+	// sound
+	if !audio_is_playing(snd_bug_chase)
+		audio_play_sound(snd_bug_chase, 30, false);
 	
 	// apply movement
 	collision();

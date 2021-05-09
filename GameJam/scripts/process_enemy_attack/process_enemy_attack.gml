@@ -40,6 +40,9 @@ function process_enemy_attack(){
 			
 			//screen_shake
 			scr_screen_shake(.125, -1);
+			
+			// sound
+			audio_play_sound(snd_player_hit, 40, false);
 			} else {
 				// blocking damage
 				if state != states.KNOCKBACK {
@@ -54,6 +57,9 @@ function process_enemy_attack(){
 					
 					//screen_shake
 					scr_screen_shake(.125, -1);
+					
+					//sound
+					audio_play_sound(snd_block, 40, false);
 					
 					// enemy gets knocked back too 
 					with(other) {
