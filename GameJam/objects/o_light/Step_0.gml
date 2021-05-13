@@ -23,7 +23,7 @@ if col = c_black {
 		case 3:
 			// water
 			intensity = 0.3
-			radius = 20;
+			radius = 30;
 			col = c_aqua;
 		break;
 		case 4:

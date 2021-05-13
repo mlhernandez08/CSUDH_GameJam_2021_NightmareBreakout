@@ -2,7 +2,7 @@
 /// @arg seconds_to_shake
 /// @arg shake_amount_-1def
 
-function scr_screen_shake(){
+function scr_screen_shake(argument0, argument1){
 	var _time = argument0;
 	var _amount = argument1;
 	

@@ -2,7 +2,7 @@
 /// @arg hurt_knockback_def_-1
 /// @arg block_knockback_def_-1
 
-function process_enemy_attack(){
+function process_enemy_attack(argument0, argument1){
 	var hk = argument0;
 	var bk = argument1;
 

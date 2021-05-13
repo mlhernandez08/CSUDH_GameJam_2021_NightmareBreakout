@@ -9,7 +9,7 @@ if hurt {
 	flash_counter ++;
 	var flash_on_time = 8; //how long sprite will stay red
 	if flash_counter < flash_on_time {
-		// commet all out for an empty flash
+		// comment all out for an empty flash
 		// flash white
 		gpu_set_fog(true, c_white, 0, 0);
 		draw_self();

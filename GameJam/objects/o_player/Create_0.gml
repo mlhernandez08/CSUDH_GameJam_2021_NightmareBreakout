@@ -11,6 +11,7 @@ jump_dampner = 2.5;
 jumps_initial = 2;
 jumps = jumps_initial;
 
+
 //friction
 drag = .12;
 //stretching
@@ -20,13 +21,10 @@ scale_min = 0.75;
 scale_max = 1.25;
 scale_decay = 0.2;
 
-// gems
-gems = 0;
-gems_value = 50;
 
 // set rm_00 start postion
-room_start_pos_x = 72;
-room_start_pos_y = 223;
+room_start_pos_x = 49;
+room_start_pos_y = 159;
 room_start_facing = 1;
 x = room_start_pos_x;
 y = room_start_pos_y;
@@ -44,7 +42,7 @@ knockback_time = room_speed / 2;
 knockback_dis = 1.5;
 
 // lives
-lives_initial = 3;
+lives_initial = 1;
 lives = lives_initial;
 lives_value = 1000;
 
@@ -116,4 +114,4 @@ mask_array[states.CROUCH_BLOCK]	= s_player_crouch;
 mask_array[states.HURTING]		= s_player_idle;
 mask_array[states.KNOCKBACK]	= s_player_idle;
 mask_array[states.DIE]			= s_player_die;
-mask_array[states.GAME_END]			= s_player_die;
+mask_array[states.GAME_END]		= s_player_die;
