@@ -26,8 +26,8 @@ function check_enemy_hp(){
 							inst.col_tail = c_maroon;
 						} else {
 							// green
-							inst.col_head = c_lime;
-							inst.col_head = c_green;
+							inst.col_head = c_black;
+							inst.col_head = c_dkgray;
 						}
 					break;
 				}
