@@ -30,7 +30,6 @@
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemy","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"o_trigger_text","path":"objects/o_trigger_text/o_trigger_text.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.4375,"scaleY":10.46875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":134.0,"y":22.0,"resourceVersion":"1.0","name":"inst_685CDB4E","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"o_trigger","path":"objects/o_trigger/o_trigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":2.21875,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1391.0,"y":89.0,"resourceVersion":"1.0","name":"inst_411E2F8D","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Tooltip","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Chest","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Dust","tags":[],"resourceType":"GMRInstanceLayer",},
@@ -162,7 +161,6 @@
     {"name":"inst_4D57BA08","path":"rooms/rm_red2/rm_red2.yy",},
     {"name":"inst_6AA37641","path":"rooms/rm_red2/rm_red2.yy",},
     {"name":"inst_685CDB4E","path":"rooms/rm_red2/rm_red2.yy",},
-    {"name":"inst_411E2F8D","path":"rooms/rm_red2/rm_red2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

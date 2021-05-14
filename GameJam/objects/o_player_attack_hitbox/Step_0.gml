@@ -8,7 +8,7 @@ with(o_enemy_parent) {
 				// get sign direction from hitbox to enemy
 				var _dir = sign(x - other.x);
 			
-				// ensure objects are not at thhe same x
+				// ensure objects are not at the same x
 				if _dir == 0 
 					_dir = 1;
 				
@@ -22,6 +22,9 @@ with(o_enemy_parent) {
 			
 				// damage enemy 
 				hp -= 1;
+				with(o_bug)
+					if chase_spd < 3
+						chase_spd = chase_spd + .2; 
 			
 				// set hurt timer
 				alarm[HURT] = hurt_time;

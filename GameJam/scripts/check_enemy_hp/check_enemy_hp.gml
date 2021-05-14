@@ -32,15 +32,6 @@ function check_enemy_hp(){
 					break;
 				}
 			}
-		// score 
-		switch(object_index) {
-			case o_frog:
-				score += 50;
-			break;
-			case o_bug:
-				score += 150;
-			break;
-		}
 		//screen_shake
 		scr_screen_shake(.15, -1);
 		instance_destroy();

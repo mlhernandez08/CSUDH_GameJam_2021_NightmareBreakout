@@ -22,10 +22,7 @@ if room != rm_menu {
 			var my = gh/2;
 		// draw game over
 		draw_sprite(s_game_over, 0, mx, my);
-		if game_over_lose var _index = 0;
-		draw_sprite(s_game_over_text, _index, mx, my);
-		draw_set_halign(fa_right);
-		draw_set_color(c_white);
+
 	}
 	#endregion
 } else {

@@ -10,7 +10,7 @@ hsp_decimal = 0;
 vsp_decimal = 0;
 facing = choose(-1, 1);
 drag = 0.04;
-hp = 3;
+hp = 10;
 
 // patrol
 // how far the bug moves in one direction
